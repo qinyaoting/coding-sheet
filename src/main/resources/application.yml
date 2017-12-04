@@ -1,0 +1,15 @@
+spring:
+  cache:
+    #缓存名称
+    cache-names: guavaDemo
+    #缓存最大数量500条, 缓存失效时间 6个小时
+    #guava.spec: maximumSize=500,expireAfterWrite=360m
+    type: redis
+  redis:
+    host: 10.38.240.30
+    port: 16379
+    pool:
+      max-idle: 8
+      min-idle: 1
+      max-active: 8
+      max-wait: -1

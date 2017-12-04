@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceMonitor {
 
-    @AfterReturning("execution(* a3aop.service.*Service.*(..))")
+    @AfterReturning("execution(* a3aop.service.*Service.*(..))")//  拦截HelloWorldService, 添加日志功能
     public void logServiceAccess(JoinPoint joinPoint) {
         System.out.println("Completed:"+joinPoint);
     }

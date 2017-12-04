@@ -20,6 +20,7 @@ public class SampleActuatorLog4jApplication {
 
     @Bean
     public InMemoryUserDetailsManager inMemoryUserDetailsManager() {
+
         //return new InMemoryUserDetailsManager(User.withDefaultPasswordEncoder()
           //      .username("user").password("password").roles("USER").build());
         return null;
